@@ -1,0 +1,186 @@
+/* ===== КАСТОМНИЙ ШРИФТ ===== */
+@font-face {
+    font-family: 'MyFont';
+    src: url('fonts/myfont.woff2') format('woff2');
+}
+
+/* ===== БАЗОВІ СТИЛІ (ПК) ===== */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f0f2f5;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #1e1e2f, #3a3a5f);
+    color: white;
+    padding: 30px;
+}
+
+h1 {
+    font-family: 'MyFont';
+}
+
+/* MENU */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+    font-family: 'MyFont';
+    cursor: pointer;
+}
+
+/* CONTENT */
+.content {
+    padding: 30px;
+}
+
+/* ICONS */
+.icons {
+    background: white;
+    padding: 30px;
+}
+
+.icon-box {
+    display: inline-block;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.icon-box:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box i {
+    font-size: 40px;
+    color: #007BFF;
+}
+
+/* SVG */
+.svg-section {
+    padding: 40px;
+}
+
+.svg-block {
+    display: inline-block;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.svg-block svg {
+    width: 120px;
+    height: 120px;
+}
+
+.svg-block circle {
+    fill: #007BFF;
+    transition: 0.3s;
+}
+
+.svg-block path {
+    stroke: white;
+    stroke-width: 5;
+    fill: none;
+}
+
+.svg-block:hover {
+    transform: scale(1.05);
+}
+
+.svg-block:hover circle {
+    fill: #ff5722;
+}
+
+/* FOOTER */
+footer {
+    background: #1e1e2f;
+    color: white;
+    padding: 15px;
+}
+
+/* =========================
+   📱 ПЛАНШЕТ (≤1024px)
+========================= */
+@media (max-width: 1024px) {
+
+    nav li {
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    .icon-box {
+        margin: 15px;
+    }
+
+    .svg-block svg {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+/* =========================
+   📱 ТЕЛЕФОН (≤768px)
+========================= */
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .icon-box {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .svg-block {
+        display: block;
+        margin: 25px auto;
+    }
+
+    .svg-block svg {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* =========================
+   📱 МАЛЕНЬКИЙ ТЕЛЕФОН (≤480px)
+========================= */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .icon-box i {
+        font-size: 30px;
+    }
+
+    .svg-block svg {
+        width: 80px;
+        height: 80px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
